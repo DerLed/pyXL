@@ -1,6 +1,6 @@
 class Certificate:
     def __init__(self, thickness):
-        self.metal_grade = None  # Марка металла
+        self.metal_grade = thickness[9]  # Марка металла
         self.gost = None  # Гост материала
         self.melting_number = None  # Номер плавки
         self.batch_number = None  # Номер партии
@@ -16,7 +16,7 @@ class Certificate:
         self.impact_strength_below_zero = None  # Ударная вязкость ниже ноля
         self.temperature_below_zero = None  # Температура ниже ноля
         self.sample_type_below_zero = None  # Тип образка ниже ноля
-        self.thickness = thickness
+        self.thickness = thickness[3]
         self.additional_data = None  # Доболнительные данные
         self.chemical_composition = []  # Хим.состав
 
